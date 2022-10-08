@@ -1,0 +1,64 @@
+.promo {
+    min-height: 650px;
+    padding: 12px 0 91px 0;
+    background: url(../../img/IMG_3425.jpg) center (center/cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+        color: white;
+    }
+    &__header {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 42px;
+        text-transform: uppercase;
+    }
+    &__subheader {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 17px;
+        width: 500px;
+    }
+    &__icon {
+        text-align: center;
+        padding: 0 10px;
+        img {
+            margin: 0 auto;
+            margin-bottom: 10px;
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .promo {
+        &__wrapper {
+            align-items: flex-start;
+        }
+        &__header {
+            font-size: 36px;
+        }
+        &__subheader {
+            font-size: 16px;
+        }
+        &__icons {
+            flex-direction: column;
+        }
+        &__icon {
+            text-align: inherit;
+            img {
+                margin: 10px;
+                display: inline-block;
+            }
+        }
+    }
+}
